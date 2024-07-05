@@ -8,7 +8,7 @@ with open('after_CC.json', 'r') as f:
     after_CC = json.load(f)
 
 
-weaviate.classes.init.Auth.client_password('tiy', 'try.1206')
+weaviate.classes.init.Auth.client_password('username', 'password')
 client = weaviate.connect_to_local(
     host='localhost',
     port=8080,

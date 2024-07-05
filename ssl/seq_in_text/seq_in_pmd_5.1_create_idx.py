@@ -40,8 +40,8 @@ def create_index(root_path, file_name, index_file_path):
 
     print(f"Extract file '{file_name}' successfully.")
 
-fasta_path = "/10TB_3/non_redundant_faa/"
-index_path = "/10TB_3/faa_idx/all_index.idx"
+fasta_path = "Data/non_redundant_faa/"
+index_path = "Data/faa_idx/all_index.idx"
 fasta_list = list(sorted(set(os.listdir(fasta_path))))
 for fasta_name in fasta_list[0:2]:
     create_index(fasta_path, fasta_name, index_path)

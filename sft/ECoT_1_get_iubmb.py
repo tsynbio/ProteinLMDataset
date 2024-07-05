@@ -4,11 +4,10 @@ import json
 from utils.requests_retry import requests_retry_session
 from tqdm import tqdm
 
-os.chdir('/home/chenzan/workSpace/plm_git/EC_file')
 
 def get_all_EC():
     output_file_path_single_line = 'EC_number.json'
-    files = os.listdir(os.getcwd())
+    files = os.listdir('Data/EC_file')
     files = sorted([f for f in files if f.endswith('.html')])
     ec2ac_name = {}
     for file in files:

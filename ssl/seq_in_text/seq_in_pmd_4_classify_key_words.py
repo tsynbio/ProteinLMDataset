@@ -13,8 +13,8 @@ parser.add_argument('--cuda', '-c', help='Get cuda number', default = 'auto')
 args = parser.parse_args()
 
 
-model_path = "/home/chenzan/workSpace/mmPLM/model/internlm-chat-20b/"
-root_path = '/home/chenzan/workSpace/bern2-annotation/'
+model_path = "model/internlm-chat-20b/"
+root_path = 'bern2-annotation/'
 dataset_path = f'{root_path}annotation_v1.1_filtered_98'
 output_path = f'{root_path}results'
 anno_list = os.listdir(dataset_path)

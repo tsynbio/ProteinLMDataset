@@ -61,7 +61,7 @@ def get_sequence(seq_id):
 
         return None
 
-root_path = '/home/chenzan/workSpace/bern2-annotation'
+root_path = 'bern2-annotation'
 results_path = f'{root_path}/results' # filtered_pubmed22n1060_result.json
 filtered_data_path = f'{root_path}/annotation_v1.1_filtered_98'
 data_path = f'{root_path}/annotation_v1.1'

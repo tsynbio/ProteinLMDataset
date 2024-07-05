@@ -28,7 +28,7 @@ with open("Data/SFT/process/enzyme_simple_info_1.json", "r") as f:
 sequences = {}
 current_id = None
 current_sequence = []
-with open("SFT/process/idmapping.fasta", "r") as faa:
+with open("Data/SFT/process/idmapping.fasta", "r") as faa:
     for line in faa:
         line = line.strip()
         if line.startswith('>'):
@@ -58,7 +58,7 @@ for index, row in index_data.iterrows():
     except:
         continue
 
-with open("SFT/Enzyme_CoT.json", "w") as cot_data:
+with open("Data/SFT/Enzyme_CoT.json", "w") as cot_data:
     json.dump(result_list, cot_data, ensure_ascii=False, indent=4)
     
     # print(len(result_list))

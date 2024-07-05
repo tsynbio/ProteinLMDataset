@@ -1,7 +1,6 @@
 import os, json
 import pandas as pd
 
-os.chdir('/home/chenzan/workSpace/mmPLM')
 index_path = 'Data/SIFTS/pdb_chain_enzyme.csv'
 index_data = pd.read_csv(index_path, skiprows=1)
 index_data = index_data[index_data['EC_NUMBER'] != '?']

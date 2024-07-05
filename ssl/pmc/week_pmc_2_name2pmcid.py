@@ -5,7 +5,7 @@ from lxml import etree
 import csv
 from tqdm import tqdm
 
-base_path = "./Data/Literature"
+base_path = "Data/Literature"
 files_number = 50
 
 progress_file = os.path.join(base_path, 'uniprot2pmcid_progress.txt')

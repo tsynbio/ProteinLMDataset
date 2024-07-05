@@ -35,7 +35,7 @@ def load_data(file_path):
 def fetch_pubmed_details(pmid_list):
     if isinstance(pmid_list, list):
         pmid_list = ','.join(pmid_list)
-    Entrez.email = 'chen.za@northeastern.edu'
+    Entrez.email = 'your_email@example.com'
     handle = Entrez.efetch(db='pubmed',
                            retmode='xml',
                            id=pmid_list)
