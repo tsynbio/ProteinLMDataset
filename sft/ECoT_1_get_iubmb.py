@@ -27,7 +27,6 @@ def get_all_EC():
         json.dump(ec2ac_name, file_single_line, indent=4, ensure_ascii=False)
 
 def clean_ec_numbers():
-
     with open('Data/SFT/process/EC_number.txt', 'r') as f:
         ec_set = set()
         original = set()

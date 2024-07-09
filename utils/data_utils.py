@@ -89,8 +89,8 @@ def check_file_exist(pmcid):
         parent_dir = "PMC010xxxxxx"
 
     try:
-        if os.path.exists(f"/data/paper_text_dataset/pmc/{parent_dir}/{pmcid}.txt"):
-            return f"/data/paper_text_dataset/pmc/{parent_dir}/{pmcid}.txt"
+        if os.path.exists(f"/Data/paper_text_dataset/pmc/{parent_dir}/{pmcid}.txt"):
+            return f"/Data/paper_text_dataset/pmc/{parent_dir}/{pmcid}.txt"
         else:
             return False
     except:
