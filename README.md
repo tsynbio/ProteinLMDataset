@@ -1,5 +1,6 @@
 # ProteinLMDataset & ProteinLMBenchmark
 **Paper Link:** https://arxiv.org/abs/2406.05540
+**Paper Presentation:** Youtube: https://www.youtube.com/watch?v=2EXWnSHyU0U
 
 ## ProteinLMDataset SSL Data Generation
 ### Biology Chinese/English text pair subset
